@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Expert</title>
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <style>
+            @font-face {
+                font-family: 'Gordita-LightItalic';
+                src: url('fonts/Gordita-LightItalic.eot');
+                src: url('fonts/Gordita-LightItalic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-LightItalic.woff') format('woff'),
+                    url('fonts/Gordita-LightItalic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-MediumItalic';
+                src: url('fonts/Gordita-MediumItalic.eot');
+                src: url('fonts/Gordita-MediumItalic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-MediumItalic.woff') format('woff'),
+                    url('fonts/Gordita-MediumItalic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-BlackItalic';
+                src: url('fonts/Gordita-BlackItalic.eot');
+                src: url('fonts/Gordita-BlackItalic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-BlackItalic.woff') format('woff'),
+                    url('fonts/Gordita-BlackItalic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Bold';
+                src: url('fonts/Gordita-Bold.eot');
+                src: url('fonts/Gordita-Bold.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Bold.woff') format('woff'),
+                    url('fonts/Gordita-Bold.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Black';
+                src: url('fonts/Gordita-Black.eot');
+                src: url('fonts/Gordita-Black.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Black.woff') format('woff'),
+                    url('fonts/Gordita-Black.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-BoldItalic';
+                src: url('fonts/Gordita-BoldItalic.eot');
+                src: url('fonts/Gordita-BoldItalic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-BoldItalic.woff') format('woff'),
+                    url('fonts/Gordita-BoldItalic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Regular';
+                src: url('fonts/Gordita-Regular.eot');
+                src: url('fonts/Gordita-Regular.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Regular.woff') format('woff'),
+                    url('fonts/Gordita-Regular.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Light';
+                src: url('fonts/Gordita-Light.eot');
+                src: url('fonts/Gordita-Light.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Light.woff') format('woff'),
+                    url('fonts/Gordita-Light.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Medium';
+                src: url('fonts/Gordita-Medium.eot');
+                src: url('fonts/Gordita-Medium.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Medium.woff') format('woff'),
+                    url('fonts/Gordita-Medium.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Italic';
+                src: url('fonts/Gordita-Italic.eot');
+                src: url('fonts/Gordita-Italic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Italic.woff') format('woff'),
+                    url('fonts/Gordita-Italic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Open Sans';
+                src: url('./fonts/open/OpenSans.eot');
+                src: url('./fonts/open/OpenSans.eot?#iefix') format('embedded-opentype'),
+                    url('./fonts/open/OpenSans.woff') format('woff'),
+                    url('./fonts/open/OpenSans.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            ::-webkit-input-placeholder {
+               color: white;
+            }
+
+            :-moz-placeholder { /* Firefox 18- */
+               color: white;  
+            }
+
+            ::-moz-placeholder {  /* Firefox 19+ */
+               color: white;  
+            }
+
+            :-ms-input-placeholder {  
+               color: white;  
+            }
+            * {
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                -webkit-tap-highlight-color: transparent;
+            }
+        </style>
+        <script type="text/javascript" src="cordova.js"></script> 
+        <script type="text/javascript" src="js/header.js"></script> 
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/interessados.js"></script>
+    </head>
+
+    <body style="
+        margin: 0px;
+        padding: 0px;   
+        background-image: url('img/bg.png');
+        background-size: cover;
+        background-repeat: no-repeat; 
+        font-family: 'Open Sans';
+        color: white;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none;   /* Chrome/Safari/Opera */
+        -moz-user-select: none;      /* Firefox */
+        -ms-user-select: none;       /* Internet Explorer/Edge */
+        user-select: none;           /* Non-prefixed version, currently
+                                          not supported by any browser */
+    ">
+        <center>
+
+            <!-- HEADER -->
+            <div class="fundo" style="
+                width: 100vw;
+                position: fixed;
+                top: 0;
+                height: 60px;
+                background-color: rgba(40, 63, 101,0);
+                border-bottom: 1px solid rgba(255,255,255,.5);
+            ">
+
+                <!-- LOGO BAR -->
+                <div style="
+                    height: 60px;
+                    width: 100vw;
+                    display: inline-block;
+                ">
+
+                    
+                    <!-- LOGO -->
+                    <div style="
+                        width: 100vw;
+                        color:#fff;
+                        font-size: 16px;
+                        line-height: 45px;
+                        font-family: 'Open Sans';
+                        margin-top: 10px;
+                        text-align: center;
+                    ">
+                        <span style="
+                        ">Avaliar prestador</span>
+                    </div>
+                    <!-- END LOGO -->
+                </div>
+                <!-- END LOGO BAR -->
+
+            </div>
+            <!-- END HEADER -->
+
+            <!-- START CONTAINER -->
+            
+                <!-- START AVALIAÇÃO POP UP -->
+                <div class="popup" style="
+                    position: absolute;
+                    width: 100vw;
+                    height: 100vh;
+                    background-color: rgba(41, 46, 49,.6);
+                    /*border: 1px solid rgba(255,255,255,.2)*/
+                ">
+                    <div style="
+                        top: 60px;
+                        overflow: auto;
+                        -webkit-overflow-scrolling: touch;
+                        width: 100vw;
+                        height: calc(100% - 60px);
+                        height: -o-calc(100% - 60px); /* opera */
+                        height: -webkit-calc(100% - 60px); /* google, safari */
+                        height: -moz-calc(100% - 60px); /* firefox */
+                        padding-top: 60px;
+                    ">
+                        <div id="prestador" style="
+                            color: #fff;
+                            text-align: center;
+                            font-size: 16px;
+                            font-family: 'Open Sans';
+                            margin-top: 25px;
+                        ">Oiii</div>
+                        <div style="
+                            color: #fff;
+                            text-align: center;
+                            font-size: 16px;
+                            font-family: 'Open Sans';
+                            margin-top: 25px;
+                        ">Ajude-nos a manter a qualidade dos nossos prestadores</div>
+                        <div style="
+                            margin: 0px;
+                            width: 94vw;
+                            outline: none;
+                            color: #FFF;
+                            font-size: 16px;
+                            font-family: 'Open Sans';
+                        "><p>Avaliação</p>
+                            <div>
+                                <img id="estrela1" onclick="avaliar(1)" src=".\img\star_nocolor.png" style="height: 35px;">
+                                <img id="estrela2" onclick="avaliar(2)" src=".\img\star_nocolor.png" style="height: 35px;">
+                                <img id="estrela3" onclick="avaliar(3)" src=".\img\star_nocolor.png" style="height: 35px;">
+                                <img id="estrela4" onclick="avaliar(4)" src=".\img\star_nocolor.png" style="height: 35px;">
+                                <img id="estrela5" onclick="avaliar(5)" src=".\img\star_nocolor.png" style="height: 35px;">
+                            </div>
+                        </div>
+                        <div style="
+                            color: #fff;
+                            text-align: center;
+                            font-size: 16px;
+                            font-family: 'Open Sans';
+                            margin-top: 25px;
+                        ">Justifique sua avaliação
+                        </div>
+                        <textarea id="comentario" type="text" maxlength="140" placeholder="Escreva sua justificativa aqui" style="
+                            background-color: rgba(0,0,0,0);
+                            font-size: 12px;
+                            font-family: 'Open Sans';
+                            margin: 0px;
+                            margin-top: 35px;
+                            padding: 15px;
+                            width: 90vw;
+                            height: 100px;
+                            border: 0px;
+                            color: #fff;
+                            outline: none;
+                            box-sizing: border-box;
+                            -webkit-box-sizing:border-box;
+                            -moz-box-sizing: border-box;
+                            border:1px solid rgba(255,255,255,.5);
+                        "></textarea>
+                        <div onclick="enviarAvaliacao(id_solicitacao)" style="
+                            box-sizing: border-box;
+                            -webkit-box-sizing:border-box;
+                            -moz-box-sizing: border-box;
+                            background-color: #d5dadc;
+                            color: #121b21;
+                            font-size: 15px;
+                            font-family: 'Open Sans';
+                            margin: 0px;
+                            width: 90vw;
+                            height: 50px;
+                            line-height: 50px;
+                            outline: none;
+                            letter-spacing: 0px;
+                            margin-top: 25px;
+                            margin-bottom: 40px;
+                            border-radius: 8px;
+                            /*border: 1px solid rgba(255,255,255,.5);*/
+                        ">Enviar avaliação
+                        </div>
+                    </div>
+                </div>
+                <!-- END AVALIAÇÃO POP UP -->
+              
+        </center>
+    </body>
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+
+    <script type="text/javascript">
+        function $_GET(param) {
+            var vars = {};
+            window.location.href.replace( location.hash, '' ).replace( 
+                /[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+                function( m, key, value ) { // callback
+                    vars[key] = value !== undefined ? value : '';
+                }
+            );
+            if ( param ) {
+                return vars[param] ? vars[param] : null;
+            }
+            return vars;
+        }
+        var id_solicitacao = $_GET('id_solicitacao');
+        mostrarDadosPrestador(id_solicitacao);
+    </script>
+    
+</html>

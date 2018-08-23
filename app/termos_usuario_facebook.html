@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Expert</title>
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <style>
+            @font-face {
+                font-family: 'Gordita-LightItalic';
+                src: url('fonts/Gordita-LightItalic.eot');
+                src: url('fonts/Gordita-LightItalic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-LightItalic.woff') format('woff'),
+                    url('fonts/Gordita-LightItalic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-MediumItalic';
+                src: url('fonts/Gordita-MediumItalic.eot');
+                src: url('fonts/Gordita-MediumItalic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-MediumItalic.woff') format('woff'),
+                    url('fonts/Gordita-MediumItalic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-BlackItalic';
+                src: url('fonts/Gordita-BlackItalic.eot');
+                src: url('fonts/Gordita-BlackItalic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-BlackItalic.woff') format('woff'),
+                    url('fonts/Gordita-BlackItalic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Bold';
+                src: url('fonts/Gordita-Bold.eot');
+                src: url('fonts/Gordita-Bold.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Bold.woff') format('woff'),
+                    url('fonts/Gordita-Bold.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Black';
+                src: url('fonts/Gordita-Black.eot');
+                src: url('fonts/Gordita-Black.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Black.woff') format('woff'),
+                    url('fonts/Gordita-Black.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-BoldItalic';
+                src: url('fonts/Gordita-BoldItalic.eot');
+                src: url('fonts/Gordita-BoldItalic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-BoldItalic.woff') format('woff'),
+                    url('fonts/Gordita-BoldItalic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Regular';
+                src: url('fonts/Gordita-Regular.eot');
+                src: url('fonts/Gordita-Regular.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Regular.woff') format('woff'),
+                    url('fonts/Gordita-Regular.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Light';
+                src: url('fonts/Gordita-Light.eot');
+                src: url('fonts/Gordita-Light.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Light.woff') format('woff'),
+                    url('fonts/Gordita-Light.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Medium';
+                src: url('fonts/Gordita-Medium.eot');
+                src: url('fonts/Gordita-Medium.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Medium.woff') format('woff'),
+                    url('fonts/Gordita-Medium.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Italic';
+                src: url('fonts/Gordita-Italic.eot');
+                src: url('fonts/Gordita-Italic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Italic.woff') format('woff'),
+                    url('fonts/Gordita-Italic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+              font-family: 'Damion-Regular';
+              src: url('fonts/Damion-Regular.eot');
+              src: url('fonts/Damion-Regular.woff2') format('woff2'),
+                   url('fonts/Damion-Regular.eot?#iefix') format('embedded-opentype');
+              font-weight: normal;
+              font-style: normal;
+            }
+
+            @font-face {
+              font-family: 'Damion';
+              src: url('fonts/Damion.woff') format('woff'),
+                   url('fonts/Damion.ttf') format('truetype'),
+                   url('fonts/Damion.svg#Damion') format('svg');
+              font-weight: normal;
+              font-style: normal;
+            }
+
+            @font-face {
+              font-family: 'BrandonGrotesque-Bold';
+              src: url('./fonts/BrandonGrotesque-Bold.eot');
+              src: url('./fonts/BrandonGrotesque-Bold.woff2') format('woff2'),
+                   url('./fonts/BrandonGrotesque-Bold.woff') format('woff'),
+                   url('./fonts/BrandonGrotesque-Bold.ttf') format('truetype'),
+                   url('./fonts/BrandonGrotesque-Bold.svg#BrandonGrotesque-Bold') format('svg'),
+                   url('./fonts/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype');
+              font-weight: normal;
+              font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Open Sans';
+                src: url('./fonts/open/OpenSans.eot');
+                src: url('./fonts/open/OpenSans.eot?#iefix') format('embedded-opentype'),
+                    url('./fonts/open/OpenSans.woff') format('woff'),
+                    url('./fonts/open/OpenSans.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+
+            ::-webkit-input-placeholder {
+               color: white;
+            }
+
+            :-moz-placeholder { /* Firefox 18- */
+               color: white;  
+            }
+
+            ::-moz-placeholder {  /* Firefox 19+ */
+               color: white;  
+            }
+
+            :-ms-input-placeholder {  
+               color: white;  
+            }
+            * {
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                -webkit-tap-highlight-color: transparent;
+            }
+        </style>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/header.js"></script>
+        <script type="text/javascript" src="js/facebook.js"></script>
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+
+    <body style="
+        margin: 0px;
+        padding: 0px;
+        background-image: url('img/bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'Open Sans';
+        color: white;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none;   /* Chrome/Safari/Opera */
+        -moz-user-select: none;      /* Firefox */
+        -ms-user-select: none;       /* Internet Explorer/Edge */
+        user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+
+    ">
+        <center>
+
+            <!-- HEADER -->
+            <div class="fundo" style="
+                width: 100vw;
+                position: fixed;
+                top: 0;
+                height: 60px;
+                background-color: rgba(40, 63, 101,0);
+                border-bottom: 1px solid rgba(255,255,255,.5);
+            ">
+
+                <!-- LOGO BAR -->
+                <div style="
+                    height: 60px;
+                    width: 100vw;
+                    display: inline-block;
+                ">
+
+                    <!-- LEFT BUTTON -->
+                    <a href="">
+                        <div style="
+                            width: 5vw;
+                            height: 35px;
+                            float: left;
+                            position: absolute;
+                            top: 10px;
+                            left: 10px;
+                            color:#fff;
+                            font-size: 14px;
+                            line-height: 45px;
+                            font-family: 'Open Sans';
+                            text-align: left;
+                        ">
+                        </div>
+                    </a>
+                    <!-- END LEFT BUTTON -->
+
+                    <!-- LOGO -->
+                    <div style="
+                        width: 90vw;
+                        color:#fff;
+                        font-size: 16px;
+                        line-height: 45px;
+                        font-family: 'Open Sans';
+                        margin-top: 10px;
+                        text-align: center;
+                    ">
+                        <span style="">Termos de Condições e Uso – Usuário</span>
+                    </div>
+                    <!-- END LOGO -->
+
+                    <!-- RIGHT BUTTON -->
+                    <div style="
+                        width: 5vw;
+                        height: 35px;
+                        float: right;
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        color:#fff;
+                        font-size: 14px;
+                        line-height: 45px;
+                        font-family: 'Open Sans';
+                       text-align: right;
+                    ">
+                    </div>
+                    <!-- END RIGHT BUTTON -->               
+
+                </div>
+                <!-- END LOGO BAR -->
+
+            </div>
+            <!-- END HEADER -->
+
+            <div class="fundo" style="
+                    position: absolute;
+                    top: 60px;
+                    overflow: auto;
+                    -webkit-overflow-scrolling: touch;
+                    width: 100vw;
+                    height: calc(100% - 60px);
+                    height: -o-calc(100% - 60px); /* opera */
+                    height: -webkit-calc(100% - 60px); /* google, safari */
+                    height: -moz-calc(100% - 60px); /* firefox */
+                    padding-top: -5px;
+                ">
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 14px;
+                        text-align: left;
+                        width: 90vw;
+                        '>Última alteração em 08/12/2016
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>Leia com atenção o presente Termo e Condições de Uso. Ao se cadastrar na presente Plataforma você estará de acordo com os referidos termos e condições, o qual descreve o uso dos serviços fornecidos pela JOB EXPERT.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>Em caso de omissões do presente termo, as dúvidas serão esclarecidas pela JOB EXPERT. No caso de não aceitar todas as disposições e condições deste termo de Uso, não contrate a JOB EXPERT.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 18px;
+                        width: 90vw;
+                        text-align: left;
+                        '>1. DO OBJETO
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>1.1 Este termo se aplica para regulamentar o uso dos serviços oferecidos pela JOB EXPERT aos usuários clientes/consumidores, especificamente possibilitar que estes tenham conexão com os prestadores de serviços disponíveis no mercado, previamente cadastrados, no que se refere à busca/entrega, fabricação/construção, instalação, limpeza, manutenção/reforma, projetos/regularização de construções, de uma forma rápida e prática. A conexão entre o usuário cliente e o profissional se dará via on-line, de acordo com o seguimento disponibilizado, não sendo possível a efetiva contratação ou pagamento pelos serviços via Plataforma.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>1.2 Este termo se aplica para regulamentar o uso dos serviços oferecidos pela JOB EXPERT aos usuários clientes/consumidores, especificamente possibilitar que estes tenham conexão com os prestadores de serviços disponíveis no mercado, previamente cadastrados, no que se refere à busca/entrega, fabricação/construção, instalação, limpeza, manutenção/reforma, projetos/regularização de construções, de uma forma rápida e prática. A conexão entre o usuário cliente e o profissional se dará via on-line, de acordo com o seguimento disponibilizado, não sendo possível a efetiva contratação ou pagamento pelos serviços via Plataforma.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>1.3 A JOB EXPERT não presta e nem contrata serviços de entrega, fabricação/construção, instalação, limpeza, manutenção/reforma, e projetos/regularização de construções.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>1.4 Da mesma forma, a JOB EXPERT não se responsabiliza pelos pagamentos, tampouco recebimentos pelos serviços prestados, os quais devem ser acertados diretamente entre o usuário cliente e o usuário profissional, registrando, ainda, que a JOB EXPERT não cobra comissão pelos serviços contratados entre os usuários. Fato esse que poderá ser alterado a qualquer tempo, mediante comunicação prévia e aditivo contratual.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 18px;
+                        width: 90vw;
+                        text-align: left;
+                        '>2. DO USUÁRIO E DO CADASTRO
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>2.1 Os usuários clientes/consumidores não terão qualquer tipo de gasto por utilizar a plataforma JOB EXPERT, sendo certo que arcarão apenas com o valor dos serviços contratados e executados pelos usuários profissionais. Frise-se que tal situação pode ser alterada a qualquer tempo e de forma unilateral pela JOB EXPERT, desde que devidamente comunicado ao usuário cliente/consumidor e, por consequência, seja consentida a cobrança. Caso não haja consentimento, o usuário poderá ser excluído da Plataforma a qualquer momento.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>2.2 O usuário cliente/consumidor, para utilizar os serviços fornecidos pela JOB EXPERT, precisará ter capacidade jurídica para os atos civis e deverá, necessariamente, prestar as informações exigidas no cadastro, assumindo integralmente responsabilidade civil e criminal pela veracidade e exatidão das informações prestadas ao cadastro, o qual poderá ser consultado, a qualquer momento, pela JOB EXPERT.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>2.3 Na hipótese de informações incorretas, inverídicas ou não confirmadas no cadastro, a JOB EXPERT se reserva o direito de não concluir o cadastro em curso ou de bloquear o cadastro já existente, impedindo o usuário de utilizar os serviços disponibilizados até que a situação se resolva. O usuário concorda com o eventual uso das informações por ele prestadas a título de avaliações e feedbacks enviadas à JOB EXPERT acerca dos serviços contratados e executados pelos usuários prestadores de serviços.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>2.4 A JOB EXPERT se propõe a disponibilizar em seu website/aplicativo as informações fornecidas pelos usuários clientes/consumidores que já se valeram dos serviços prestados pelos usuários profissionais, a fim de possibilitar a escolha dos melhores serviços disponíveis no mercado.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>2.5 Da mesma forma, os usuários prestadores de serviço disponibilizarão a avaliação do usuário cliente/consumidor, de modo que, caso este não atinja o patamar mínimo aceitável, qual seja, 2,5 estrelas, poderá ser excluído da plataforma unilateralmente pela JOB EXPERT.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 18px;
+                        width: 90vw;
+                        text-align: left;
+                        '>3. DO ACESSO À PLATAFORMA
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>3.1 Efetuado com sucesso o cadastro, o usuário cliente/consumidor terá acesso aos serviços através de login e senha, que serão gerados de forma individual, os quais não poderão ser cedidos pelo usuário a terceiros. O uso do login e da senha são de exclusiva responsabilidade do usuário, sendo, de igual modo, sua responsabilidade qualquer solicitação de serviço ou uso indevido que sejam feitos com seu login e senha.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>3.2 A JOB EXPERT poderá utilizar alguns plug-ins de redes sociais de terceiros, notadamente o “facebook” (Facebook Serviços Online Brasil; CNPJ: 13.347.016/0001-17), como possibilidade de acesso e login do usuário na plataforma.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 18px;
+                        width: 90vw;
+                        text-align: left;
+                        '>4. DAS DISPOSIÇÕES FINAIS
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>4.1 A JOB EXPERT se reserva, desde já, o direito de atualizar e alterar o conteúdo do presente instrumento, a qualquer tempo e a seu exclusivo critério, disponibilizando a sua nova versão diretamente em seu aplicativo e em seu sítio eletrônico, este quando houver, para visualizações por todos os Usuários, ressalvadas as hipóteses de alterações significativas, as quais a JOB EXPERT se compromete a comunicar previamente os usuários via e-mail cadastrado.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>4.2 A JOB EXPERT protegerá, por meio de armazenamento em seus servidores ou quaisquer outros meios magnéticos de alta segurança, a confidencialidade de todas as informações e cadastros relativos aos usuários, não se responsabilizando, contudo, pela reparação de eventuais prejuízos que possam ser derivados de apreensão e cooptação indevida e ilegal de dados por parte de terceiros que, com a ruptura dos sistemas de segurança, consigam acessar as informações.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>4.3 Os dados fornecidos pelos usuários apenas poderão ser transferidos, compartilhados e/ou cedidos a sociedades de parceiros, subsidiárias, filiais e afiliadas, dentro do território nacional ou estrangeiro, para fins de identificação, contato, bem como para entender melhor as necessidades de nossos clientes e conseguir um serviço melhor. A JOB EXPERT poderá conservar pelo tempo que a lei aplicável permitir, a informação em seu banco de dados com o objetivo de simplificar a prestação de serviço para futuras reservas.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>4.4 A JOB EXPERT não garante o acesso ininterrupto ou livre de erros aos aplicativos decorrentes de interrupção por vírus, ataque de hackers, erros de script, corrupção de arquivos, pirataria, quebra de segurança, programas incompatíveis com o site da JOB EXPERT e/ou seus parceiros ou outros quaisquer que impeçam a visualização correta do conteúdo disponibilizado, não assumindo qualquer responsabilidade por danos diretos ou indiretos causados em virtude do acesso ou impossibilidade de acessá-los.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>4.5 O presente termo e condições de uso poderá, a qualquer tempo, ser alterado pela JOB EXPERT, total ou parcialmente, para adequações e inserções, tudo com vistas ao aprimoramento dos serviços disponibilizados.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>4.6 A nulidade total ou parcial de qualquer item ou condição prevista neste instrumento, ou mesmo retardamento da exigibilidade de direitos, não importará em precedente, novação ou alteração, cujos termos continuarão exigíveis a qualquer tempo.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>O usuário declara ter lido, compreendido e que aceita todas as regras, condições e obrigações estabelecidas no presente termo.
+                    </p>
+                    <p style='
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        width: 90vw;
+                        text-align: justify;
+                        '>As partes elegem o Foro da Comarca de Itajaí/SC para dirimir quaisquer controvérsias oriundas do presente.
+                    </p>
+                    <div onclick="window.location.href='index.html'" style="
+                        width: 50vw;
+                        height: 50px;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        background-color: #d5dadc;
+                        color: #121b21;
+                        font-size: 15px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        line-height: 50px;
+                        outline: none;
+                        letter-spacing: 0px;
+                        float: left;
+                        ">Recusar
+                    </div>
+                    <div onclick="entrarFacebook()" style="
+                        width: 50vw;
+                        height: 50px;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        background-color: #d5dadc;
+                        color: #121b21;
+                        font-size: 15px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        line-height: 50px;
+                        outline: none;
+                        letter-spacing: 0px;
+                        float: right;
+                        ">Aceitar
+                    </div>
+            </div>                                  
+
+        </center>
+        <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script> 
+
+    </body>
+</html>

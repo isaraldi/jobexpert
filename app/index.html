@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Expert</title>
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <style>
+            @font-face {
+                font-family: 'Gordita-LightItalic';
+                src: url('fonts/Gordita-LightItalic.eot');
+                src: url('fonts/Gordita-LightItalic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-LightItalic.woff') format('woff'),
+                    url('fonts/Gordita-LightItalic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-MediumItalic';
+                src: url('fonts/Gordita-MediumItalic.eot');
+                src: url('fonts/Gordita-MediumItalic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-MediumItalic.woff') format('woff'),
+                    url('fonts/Gordita-MediumItalic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-BlackItalic';
+                src: url('fonts/Gordita-BlackItalic.eot');
+                src: url('fonts/Gordita-BlackItalic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-BlackItalic.woff') format('woff'),
+                    url('fonts/Gordita-BlackItalic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Bold';
+                src: url('fonts/Gordita-Bold.eot');
+                src: url('fonts/Gordita-Bold.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Bold.woff') format('woff'),
+                    url('fonts/Gordita-Bold.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Black';
+                src: url('fonts/Gordita-Black.eot');
+                src: url('fonts/Gordita-Black.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Black.woff') format('woff'),
+                    url('fonts/Gordita-Black.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-BoldItalic';
+                src: url('fonts/Gordita-BoldItalic.eot');
+                src: url('fonts/Gordita-BoldItalic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-BoldItalic.woff') format('woff'),
+                    url('fonts/Gordita-BoldItalic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Regular';
+                src: url('fonts/Gordita-Regular.eot');
+                src: url('fonts/Gordita-Regular.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Regular.woff') format('woff'),
+                    url('fonts/Gordita-Regular.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Light';
+                src: url('fonts/Gordita-Light.eot');
+                src: url('fonts/Gordita-Light.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Light.woff') format('woff'),
+                    url('fonts/Gordita-Light.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Medium';
+                src: url('fonts/Gordita-Medium.eot');
+                src: url('fonts/Gordita-Medium.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Medium.woff') format('woff'),
+                    url('fonts/Gordita-Medium.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Italic';
+                src: url('fonts/Gordita-Italic.eot');
+                src: url('fonts/Gordita-Italic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Italic.woff') format('woff'),
+                    url('fonts/Gordita-Italic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+              font-family: 'Damion-Regular';
+              src: url('fonts/Damion-Regular.eot');
+              src: url('fonts/Damion-Regular.woff2') format('woff2'),
+                   url('fonts/Damion-Regular.eot?#iefix') format('embedded-opentype');
+              font-weight: normal;
+              font-style: normal;
+            }
+
+            @font-face {
+              font-family: 'Damion';
+              src: url('fonts/Damion.woff') format('woff'),
+                   url('fonts/Damion.ttf') format('truetype'),
+                   url('fonts/Damion.svg#Damion') format('svg');
+              font-weight: normal;
+              font-style: normal;
+            }
+
+            @font-face {
+              font-family: 'BrandonGrotesque-Bold';
+              src: url('./fonts/BrandonGrotesque-Bold.eot');
+              src: url('./fonts/BrandonGrotesque-Bold.woff2') format('woff2'),
+                   url('./fonts/BrandonGrotesque-Bold.woff') format('woff'),
+                   url('./fonts/BrandonGrotesque-Bold.ttf') format('truetype'),
+                   url('./fonts/BrandonGrotesque-Bold.svg#BrandonGrotesque-Bold') format('svg'),
+                   url('./fonts/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype');
+              font-weight: normal;
+              font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Open Sans';
+                src: url('./fonts/open/OpenSans.eot');
+                src: url('./fonts/open/OpenSans.eot?#iefix') format('embedded-opentype'),
+                    url('./fonts/open/OpenSans.woff') format('woff'),
+                    url('./fonts/open/OpenSans.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+
+            ::-webkit-input-placeholder {
+               color: white;
+            }
+
+            :-moz-placeholder { /* Firefox 18- */
+               color: white;  
+            }
+
+            ::-moz-placeholder {  /* Firefox 19+ */
+               color: white;  
+            }
+
+            :-ms-input-placeholder {  
+               color: white;  
+            }
+            * {
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                -webkit-tap-highlight-color: transparent;
+            }
+        </style>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/solicitacao.js"></script>
+        <script type="text/javascript" src="js/header.js"></script>     
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/cadastro.js"></script>
+        <script type="text/javascript" src="js/facebook.js"></script>
+        <script type="text/javascript">
+
+            //alert(window.localStorage.getItem("usuario"));
+            if(window.localStorage.getItem("usuario") != null){
+                if(window.localStorage.getItem("status") == 1){
+                    window.location.href='servicos.html';
+                }else{
+                    window.location.href='solicitacoes.html';
+                }
+            }
+        </script> 
+    </head>
+
+    <body onload="listarServicos(), listarEstados(), listarServicosCadastro()" style="
+        margin: 0px;
+        padding: 0px;
+        background-image: url('img/bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'Open Sans';
+        color: white;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none;   /* Chrome/Safari/Opera */
+        -moz-user-select: none;      /* Firefox */
+        -ms-user-select: none;       /* Internet Explorer/Edge */
+        user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+
+    ">
+        <center>
+
+            <!-- HEADER -->
+            <div id="deviceready" class="fundo" style="
+                width: 100vw;
+                position: fixed;
+                top: 0;
+                height: 60px;
+                background-color: rgba(40, 63, 101,0);
+                border-bottom: 1px solid rgba(255,255,255,.5);
+            ">
+
+                <!-- LOGO BAR -->
+                <div style="
+                    height: 60px;
+                    width: 100vw;
+                    display: inline-block;
+                ">
+
+                    <!-- LEFT BUTTON -->
+                    <div onclick="popupAnimation('cadastro')" style="
+                        width: 20vw;
+                        height: 35px;
+                        float: left;
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        color:#fff;
+                        font-size: 14px;
+                        line-height: 45px;
+                        font-family: 'Open Sans';
+                        text-align: left;
+                    ">Cadastro
+                    </div>
+                    <!-- END LEFT BUTTON -->
+
+                    <!-- LOGO -->
+                    <div style="
+                        width: 60vw;
+                        color:#fff;
+                        font-size: 16px;
+                        line-height: 45px;
+                        font-family: 'Open Sans';
+                        margin-top: 10px;
+                        text-align: center;
+                    ">Solicitar serviço
+                    </div>
+                    <!-- END LOGO -->
+
+                    <!-- RIGHT BUTTON -->
+                    <div onclick="popupAnimation('login')" style="
+                        width: 20vw;
+                        height: 35px;
+                        float: right;
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        color:#fff;
+                        font-size: 14px;
+                        line-height: 45px;
+                        font-family: 'Open Sans';
+                       text-align: right;
+                    ">Login
+                    </div>
+                    <!-- END RIGHT BUTTON -->               
+
+                </div>
+                <!-- END LOGO BAR -->
+
+            </div>
+            <!-- END HEADER -->
+            <div class="fundo" style="
+                    position: absolute;
+                    top: 60px;
+                    overflow: auto;
+                    -webkit-overflow-scrolling: touch;
+                    width: 100vw;
+                    height: calc(100% - 60px);
+                    height: -o-calc(100% - 60px); /* opera */
+                    height: -webkit-calc(100% - 60px); /* google, safari */
+                    height: -moz-calc(100% - 60px); /* firefox */
+                    padding-top: -5px;
+                    filter: blur(0px);
+            ">
+                <!-- START JOB LIST -->
+                <div id="servicos" style="
+                    margin: 0px;
+                    margin-top: 6vw;
+                    left: 5vw;
+                    width: 90vw;
+                    border: 0px;
+                    outline: none;
+                ">
+                    
+                </div>
+                <!-- END JOB LIST -->
+            </div>
+
+            <!-- POP UPS START -->
+            <!-- START FIRST POP UP -->
+            <div id="primeira" class="popup" style="
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                background-color: /*#00111a*/ rgba(41, 46, 49,.6);
+                display: none;
+                /*border: 1px solid rgba(255,255,255,.5);*/
+            ">
+                <div style="top: 0vh;
+                    overflow: auto;
+                    -webkit-overflow-scrolling: touch;
+                    width: 100vw;
+                    height: calc(100% - 0vh);
+                    height: -o-calc(100% - 0vh); /* opera */
+                    height: -webkit-calc(100% - 0vh); /* google, safari */
+                    height: -moz-calc(100% - 0vh); /* firefox */
+                    padding-top: -5px;
+                ">
+                
+                <div style="
+                    color: #fff;
+                    text-align: center;
+                    font-size: 16px;
+                    font-family: 'Open Sans';
+                    margin-top: 25px;
+                ">Selecione a sua cidade</div>
+                <select onChange="listarCidadesSolicitacao(this.options[this.selectedIndex].value)" id="estados" style="
+                    background-color: rgba(0,0,0,0);
+                    font-size: 12px;
+                    font-family: 'Open Sans';
+                    color: #fff;
+                    margin: 0px;
+                    margin-top: 35px;
+                    padding: 15px;
+                    width: 90vw;
+                    height: 50px;
+                    border: 0px;
+                    outline: none;
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    border-bottom:1px solid rgba(255,255,255,.5);
+                    color:#fff;
+                ">
+                </select>
+                <select id="cidades" style="
+                    background-color: rgba(0,0,0,0);
+                    font-size: 12px;
+                    font-family: 'Open Sans';
+                    color: #fff;
+                    margin: 0px;
+                    margin-top: 0px;
+                    padding: 15px;
+                    width: 90vw;
+                    height: 50px;
+                    border: 0px;
+                    outline: none;
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    border-bottom:1px solid rgba(255,255,255,.5);
+                    color:#fff;
+                ">
+                    <option value=''>Cidade</option>
+                </select>
+                <div onclick="popup2()" style="
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    background-color: #d5dadc;
+                    color: #121b21;
+                    font-size: 15px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    margin-top: 35px;
+                    width: 90vw;
+                    height: 50px;
+                    line-height: 50px;
+                    border-radius: 8px;
+                    /*border: 1px solid rgba(255,255,255,.5);*/
+                    outline: none;
+                    letter-spacing: 0px;
+                ">Avançar</div>
+                <div onclick="popup4(0)" style="
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    background-color: #d5dadc;
+                    color: #121b21;
+                    font-size: 15px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    width: 90vw;
+                    height: 50px;
+                    line-height: 50px;
+                    outline: none;
+                    letter-spacing: 0px;
+                    margin-bottom: 40px;
+                    border-radius: 8px;
+                    /*border: 1px solid rgba(255,255,255,.5);*/
+                    margin-top: 20px;
+                ">Cancelar</div>
+                </div>
+            </div>
+            <!-- END FIRST POP UP -->
+
+            <!-- START SECOND POP UP -->
+            <div id="segunda" class="popup" style="
+                position: absolute;
+                /*left: 5vw;*/
+                width: 100vw;
+                height: 100vh;
+                background-color: /*#00111a*/ rgba(41, 46, 49,.6);
+                display:none;
+                /*border: 1px solid rgba(255,255,255,.5);*/
+            ">
+                <div style="top: 0vh;
+                    overflow: auto;
+                    -webkit-overflow-scrolling: touch;
+                    width: 100vw;
+                    height: calc(100% - 0vh);
+                    height: -o-calc(100% - 0vh); /* opera */
+                    height: -webkit-calc(100% - 0vh); /* google, safari */
+                    height: -moz-calc(100% - 0vh); /* firefox */
+                    padding-top: -5px;
+                ">
+                <div style="
+                    color: #fff;
+                    text-align: center;
+                    font-size: 16px;
+                    font-family: 'Open Sans';
+                    margin-top: 25px;
+                ">Informe o endereço onde o serviço <br>será avaliado/executado</div>
+                <input type="text" id="rua"  placeholder="Rua" style="
+                    background-color: rgba(0,0,0,0);
+                    font-size: 12px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    margin-top: 35px;
+                    padding: 15px;
+                    width: 90vw;
+                    height: 50px;
+                    border: 0px;
+                    color: #fff;
+                    outline: none;
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    border-bottom:1px solid rgba(255,255,255,.5);
+                "/>
+                <input type="number" id="numero"  placeholder="Número" style="
+                    background-color: rgba(0,0,0,0);
+                    font-size: 12px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    padding: 15px;
+                    width: 90vw;
+                    height: 50px;
+                    border: 0px;
+                    color: #fff;
+                    outline: none;
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    border-bottom:1px solid rgba(255,255,255,.5);
+                "/>
+                <input type="text" id="complemento"  placeholder="Complemento" style="
+                    background-color: rgba(0,0,0,0);
+                    font-size: 12px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    padding: 15px;
+                    width: 90vw;
+                    height: 50px;
+                    border: 0px;
+                    color: #fff;
+                    outline: none;
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    border-bottom:1px solid rgba(255,255,255,.5);
+                "/>
+                <div onclick="popup3()" style="
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    background-color: #d5dadc;
+                    color: #121b21;
+                    font-size: 15px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    margin-top: 35px;
+                    width: 90vw;
+                    height: 50px;
+                    line-height: 50px;
+                    border-radius: 8px;
+                    /*border: 1px solid rgba(255,255,255,.5);*/
+                    outline: none;
+                    letter-spacing: 0px;
+                ">Avançar</div>
+                <div onclick="popup4(0)" style="
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    background-color: #d5dadc;
+                    color: #121b21;
+                    font-size: 15px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    width: 90vw;
+                    height: 50px;
+                    line-height: 50px;
+                    outline: none;
+                    letter-spacing: 0px;
+                    margin-bottom: 40px;
+                    border-radius: 8px;
+                    /*border: 1px solid rgba(255,255,255,.5);*/
+                    margin-top: 20px;
+                ">Cancelar</div>
+                </div>
+            </div>
+            <!-- END SECOND POP UP -->
+
+            <!-- START THIRD POP UP -->
+            <div id="terceira" class="popup" style="
+                position: absolute;
+                top: 0vh;
+                width: 100vw;
+                height: 100vh;
+                background-color: rgba(41, 46, 49,.6);
+                display:none;
+            ">
+                <div style="top: 0vh;
+                    overflow: auto;
+                    -webkit-overflow-scrolling: touch;
+                    width: 100vw;
+                    height: calc(100% - 0vh);
+                    height: -o-calc(100% - 0vh);
+                    height: -webkit-calc(100% - 0vh);
+                    height: -moz-calc(100% - 0vh);
+                    padding-top: -5px;
+                ">
+                <div style="
+                    color: #fff;
+                    text-align: center;
+                    font-size: 16px;
+                    font-family: 'Open Sans';
+                    margin-top: 25px;
+                ">Faça uma breve descrição<br> do seu pedido</div>
+                <textarea type="text" id="descricao" maxlength="140" placeholder="Escreva sua descrição aqui" style="
+                    background-color: rgba(0,0,0,0);
+                    font-size: 12px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    margin-top: 35px;
+                    padding: 15px;
+                    width: 90vw;
+                    height: 100px;
+                    border: 0px;
+                    color: #fff;
+                    outline: none;
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    border:1px solid rgba(255,255,255,.5);
+                "></textarea>
+                <div onclick="popup7()" style="
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    background-color: #d5dadc;
+                    color: #121b21;
+                    font-size: 15px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    margin-top: 35px;
+                    width: 90vw;
+                    height: 50px;
+                    line-height: 50px;
+                    border-radius: 8px;
+                    outline: none;
+                    letter-spacing: 0px;
+                ">Avançar</div>
+                <div onclick="popup4(1)" style="
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    background-color: #d5dadc;
+                    color: #121b21;
+                    font-size: 15px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    width: 90vw;
+                    height: 50px;
+                    line-height: 50px;
+                    outline: none;
+                    letter-spacing: 0px;
+                    margin-bottom: 40px;
+                    border-radius: 8px;
+                    margin-top: 20px;
+                ">Cancelar</div>
+                </div>
+            </div>
+            <!-- END THIRD POP UP -->
+
+            <!-- START LOGIN SOLICITAÇÃO POP UP -->
+            <div id="login-solicitacao" class="popup" style="
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                background-color: /*#00111a*/ rgba(41, 46, 49,.6);
+                display:none;
+                /*border: 1px solid rgba(255,255,255,.5);*/
+            ">
+                <div style="top: 0vh;
+                    overflow: auto;
+                    -webkit-overflow-scrolling: touch;
+                    width: 100vw;
+                    height: calc(100% - 0vh);
+                    height: -o-calc(100% - 0vh); /* opera */
+                    height: -webkit-calc(100% - 0vh); /* google, safari */
+                    height: -moz-calc(100% - 0vh); /* firefox */
+                    padding-top: -5px;
+                ">
+                <div style="
+                    color: #fff;
+                    text-align: center;
+                    font-size: 16px;
+                    font-family: 'Open Sans';
+                    margin-top: 25px;
+                ">Efetue o login para continuar</div>
+                <form>
+                    <input type="email" id="emailSolicitacao" placeholder="Email" style="
+                        background-color: rgba(0,0,0,0);
+                        font-size: 12px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        margin-top: 35px;
+                        padding: 15px;
+                        width: 90vw;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        outline: none;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        border-bottom:1px solid rgba(255,255,255,.5);
+                    "/>
+                    <input type="password" id="senhaSolicitacao" placeholder="Senha" style="
+                        background-color: rgba(0,0,0,0);
+                        font-size: 12px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        padding: 15px;
+                        width: 90vw;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        outline: none;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        border-bottom:1px solid rgba(255,255,255,.5);
+                    "/>
+                </form>
+                <div onclick="loginSolicitacao()" style="
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    background-color: #d5dadc;
+                    color: #121b21;
+                    font-size: 15px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    margin-top: 20px;
+                    width: 90vw;
+                    height: 50px;
+                    line-height: 50px;
+                    border-radius: 8px;
+                    /*border: 1px solid rgba(255,255,255,.5);*/
+                    outline: none;
+                    letter-spacing: 0px;
+                ">Entrar</div>                
+                <div onclick="termos_face(1)" style="
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    background-color: #d5dadc;
+                    color: #121b21;
+                    font-size: 15px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    margin-top: 20px;
+                    width: 90vw;
+                    height: 50px;
+                    line-height: 50px;
+                    border-radius: 8px;
+                    /*border: 1px solid rgba(255,255,255,.5);*/
+                    outline: none;
+                    letter-spacing: 0px;
+                ">Entrar pelo Facebook</div>
+                <div onclick="popupCadastro()" style="
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    background-color: #d5dadc;
+                    color: #121b21;
+                    font-size: 15px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    margin-top: 20px;
+                    width: 90vw;
+                    height: 50px;
+                    line-height: 50px;
+                    border-radius: 8px;
+                    /*border: 1px solid rgba(255,255,255,.5);*/
+                    outline: none;
+                    letter-spacing: 0px;
+                ">Criar nova conta</div> 
+                <div onclick="popup4(0)" style="
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    background-color: #d5dadc;
+                    color: #121b21;
+                    font-size: 15px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    width: 90vw;
+                    height: 50px;
+                    line-height: 50px;
+                    outline: none;
+                    letter-spacing: 0px;
+                    margin-bottom: 40px;
+                    border-radius: 8px;
+                    /*border: 1px solid rgba(255,255,255,.5);*/
+                    margin-top: 20px;
+                ">Cancelar</div>
+                </div>
+            </div>
+            <!-- END LOGIN SOLICITAÇÃO POP UP -->
+
+            <!-- START LOGIN POP UP -->
+            <div id="login" class="popup" style="
+                position: absolute;
+                /*left: 5vw;*/
+                width: 100vw;
+                height: 100vh;
+                background-color: /*#00111a*/ rgba(41, 46, 49,.6);
+                display:none;
+                /*border: 1px solid rgba(255,255,255,.5);*/
+            ">
+                <div style="top: 0vh;
+                    overflow: auto;
+                    -webkit-overflow-scrolling: touch;
+                    width: 100vw;
+                    height: calc(100% - 0vh);
+                    height: -o-calc(100% - 0vh); /* opera */
+                    height: -webkit-calc(100% - 0vh); /* google, safari */
+                    height: -moz-calc(100% - 0vh); /* firefox */
+                    padding-top: -5px;
+                ">
+                <div style="
+                    color: #fff;
+                    text-align: center;
+                    font-size: 16px;
+                    font-family: 'Open Sans';
+                    margin-top: 25px;
+                ">Login</div>
+                <input type="email" id="email"  placeholder="Email" style="
+                    background-color: rgba(0,0,0,0);
+                    font-size: 12px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    margin-top: 35px;
+                    padding: 4vw;
+                    width: 90vw;
+                    height: 50px;
+                    border: 0px;
+                    color: #fff;
+                    outline: none;
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    border-bottom:1px solid rgba(255,255,255,.5);
+                "/>
+                <input type="password" id="senha"  placeholder="Senha" style="
+                    background-color: rgba(0,0,0,0);
+                    font-size: 12px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    padding: 4vw;
+                    width: 90vw;
+                    height: 50px;
+                    border: 0px;
+                    color: #fff;
+                    outline: none;
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    border-bottom:1px solid rgba(255,255,255,.5);
+                "/>
+                <div onclick="login()" style="
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    color: #121b21;
+                    font-size: 15px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    margin-top: 20px;
+                    width: 90vw;
+                    height: 50px;
+                    line-height: 50px;
+                    border-radius: 8px;
+                    /*border: 1px solid rgba(255,255,255,.5);*/
+                    background-color: #d5dadc;
+                    outline: none;
+                    letter-spacing: 0px;
+                ">Entrar</div>
+                <div onclick="termos_face(0)" style="
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    color: #121b21;
+                    font-size: 15px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    margin-top: 20px;
+                    width: 90vw;
+                    height: 50px;
+                    line-height: 50px;
+                    border-radius: 8px;
+                    /*border: 1px solid rgba(255,255,255,.5);*/
+                    background-color: #d5dadc;
+                    outline: none;
+                    letter-spacing: 0px;
+                ">Entrar com o Facebook</div>
+                <div onclick="popupAnimation('login')" style="
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    color: #121b21;
+                    font-size: 15px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    width: 90vw;
+                    height: 50px;
+                    line-height: 50px;
+                    outline: none;
+                    letter-spacing: 0px;
+                    margin-bottom: 40px;
+                    border-radius: 8px;
+                    /*border: 1px solid rgba(255,255,255,.5);*/
+                    background-color: #d5dadc;
+                    margin-top: 20px;
+                ">Cancelar</div>
+                </div>
+            </div>
+            <!-- END LOGIN POP UP -->
+
+            <!-- START CADASTRO POP UP -->
+            <div id="cadastro" class="popup" style="
+                position: absolute;
+                left: 0vw;
+                width: 100vw;
+                height: 100vh;
+                /*margin-bottom: 6vw;*/
+                background-color: /*#00111a*/ rgba(41, 46, 49,.6);
+                display:none;
+                /*border: 1px solid rgba(255,255,255,.5);*/
+            ">
+                <div style="top: 0vh;
+                    overflow: auto;
+                    -webkit-overflow-scrolling: touch;
+                    width: 100vw;
+                    height: calc(100% - 0vh);
+                    height: -o-calc(100% - 0vh); /* opera */
+                    height: -webkit-calc(100% - 0vh); /* google, safari */
+                    height: -moz-calc(100% - 0vh); /* firefox */
+                    padding-top: -5px;
+                ">
+                    <div style="
+                        color: #fff;
+                        text-align: center;
+                        font-size: 16px;
+                        font-family: 'Open Sans';
+                        margin-top: 25px;
+                    ">Cadastro</div>
+                    <div onclick="termos_face(0)" style="
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        color: #121b21;
+                        font-size: 15px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        margin-top: 35px;
+                        width: 90vw;
+                        height: 50px;
+                        line-height: 50px;
+                        border-radius: 8px;
+                        /*border: 1px solid rgba(255,255,255,.5);*/
+                        background-color: #d5dadc;
+                        outline: none;
+                        letter-spacing: 0px;
+                    ">Entrar pelo Facebook</div>
+                    <form>
+                    <input type="text" id="nome"  placeholder="Nome completo" style="
+                        background-color: rgba(0,0,0,0);
+                        font-size: 12px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        margin-top: 10px;
+                        padding: 4vw;
+                        width: 90vw;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        outline: none;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        border-bottom:1px solid rgba(255,255,255,.5);
+                    "/>
+                    <input type="email" id="emailCadastro"  placeholder="Email" style="
+                        background-color: rgba(0,0,0,0);
+                        font-size: 12px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        padding: 4vw;
+                        width: 90vw;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        outline: none;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        border-bottom:1px solid rgba(255,255,255,.5);
+                    "/>
+                    <input type="text" id="cpf"  placeholder="CPF/CNPJ" style="
+                        background-color: rgba(0,0,0,0);
+                        font-size: 12px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        padding: 4vw;
+                        width: 90vw;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        outline: none;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        border-bottom:1px solid rgba(255,255,255,.5);
+                    "/>
+                    <input type="password" id="senhaCadastro"  placeholder="Senha" style="
+                        background-color: rgba(0,0,0,0);
+                        font-size: 12px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        padding: 4vw;
+                        width: 90vw;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        outline: none;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        border-bottom:1px solid rgba(255,255,255,.5);
+                    "/>
+                    <input type="password" id="confirmarSenha"  placeholder="Confirmar senha" style="
+                        background-color: rgba(0,0,0,0);
+                        font-size: 12px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        padding: 4vw;
+                        width: 90vw;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        outline: none;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        border-bottom:1px solid rgba(255,255,255,.5);
+                    "/></form>
+                    <div onclick="validarDados()" style="
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        color: #121b21;
+                        font-size: 15px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        margin-top: 20px;
+                        width: 90vw;
+                        height: 50px;
+                        line-height: 50px;
+                        border-radius: 8px;
+                        /*border: 1px solid rgba(255,255,255,.5);*/
+                        background-color: #d5dadc;
+                        outline: none;
+                        letter-spacing: 0px;
+                    ">Confirmar</div>
+                    <div onclick="popupAnimation('cadastro')" style="
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        color: #121b21;
+                        font-size: 15px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        width: 90vw;
+                        height: 50px;
+                        line-height: 50px;
+                        outline: none;
+                        letter-spacing: 0px;
+                        border-radius: 8px;
+                        /*border: 1px solid rgba(255,255,255,.5);*/
+                        background-color: #d5dadc;
+                        margin-top: 20px;
+                    ">Cancelar</div>
+                    <div onclick="popup8()" style="
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        color: #121b21;
+                        font-size: 15px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        width: 90vw;
+                        height: 50px;
+                        line-height: 50px;
+                        outline: none;
+                        letter-spacing: 0px;
+                        margin-bottom: 40px;
+                        border-radius: 8px;
+                        /*border: 1px solid rgba(255,255,255,.5);*/
+                        background-color: #d5dadc;
+                        margin-top: 20px;
+                    ">Cadastrar-se como prestador</div>
+                </div>
+            </div>
+            <!-- END CADASTRO POP UP -->
+
+            <!-- START CADASTRO POP UP -->
+            <div id="cadastro-solicitacao" class="popup" style="
+                position: absolute;
+                left: 0vw;
+                width: 100vw;
+                height: 100vh;
+                /*margin-bottom: 6vw;*/
+                background-color: /*#00111a*/ rgba(41, 46, 49,.6);
+                display:none;
+                /*border: 1px solid rgba(255,255,255,.5);*/
+            ">
+                <div style="top: 0vh;
+                    overflow: auto;
+                    -webkit-overflow-scrolling: touch;
+                    width: 100vw;
+                    height: calc(100% - 0vh);
+                    height: -o-calc(100% - 0vh); /* opera */
+                    height: -webkit-calc(100% - 0vh); /* google, safari */
+                    height: -moz-calc(100% - 0vh); /* firefox */
+                    padding-top: -5px;
+                ">
+                    <div style="
+                        color: #fff;
+                        text-align: center;
+                        font-size: 16px;
+                        font-family: 'Open Sans';
+                        margin-top: 25px;
+                    ">Cadastro</div>
+                    <div onclick="termos_face(1)" style="
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        color: #121b21;
+                        font-size: 15px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        margin-top: 35px;
+                        width: 90vw;
+                        height: 50px;
+                        line-height: 50px;
+                        border-radius: 8px;
+                        /*border: 1px solid rgba(255,255,255,.5);*/
+                        background-color: #d5dadc;
+                        outline: none;
+                        letter-spacing: 0px;
+                    ">Entrar pelo Facebook</div>
+                    <form>
+                    <input type="text" id="nome"  placeholder="Nome completo" style="
+                        background-color: rgba(0,0,0,0);
+                        font-size: 12px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        margin-top: 10px;
+                        padding: 4vw;
+                        width: 90vw;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        outline: none;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        border-bottom:1px solid rgba(255,255,255,.5);
+                    "/>
+                    <input type="email" id="emailCadastro"  placeholder="Email" style="
+                        background-color: rgba(0,0,0,0);
+                        font-size: 12px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        padding: 4vw;
+                        width: 90vw;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        outline: none;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        border-bottom:1px solid rgba(255,255,255,.5);
+                    "/>
+                    <input type="text" id="cpf"  placeholder="CPF/CNPJ" style="
+                        background-color: rgba(0,0,0,0);
+                        font-size: 12px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        padding: 4vw;
+                        width: 90vw;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        outline: none;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        border-bottom:1px solid rgba(255,255,255,.5);
+                    "/>
+                    <input type="password" id="senhaCadastro"  placeholder="Senha" style="
+                        background-color: rgba(0,0,0,0);
+                        font-size: 12px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        padding: 4vw;
+                        width: 90vw;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        outline: none;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        border-bottom:1px solid rgba(255,255,255,.5);
+                    "/>
+                    <input type="password" id="confirmarSenha"  placeholder="Confirmar senha" style="
+                        background-color: rgba(0,0,0,0);
+                        font-size: 12px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        padding: 4vw;
+                        width: 90vw;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        outline: none;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        border-bottom:1px solid rgba(255,255,255,.5);
+                    "/></form>
+                    <div onclick="validarDados(1)" style="
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        color: #121b21;
+                        font-size: 15px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        margin-top: 20px;
+                        width: 90vw;
+                        height: 50px;
+                        line-height: 50px;
+                        border-radius: 8px;
+                        /*border: 1px solid rgba(255,255,255,.5);*/
+                        background-color: #d5dadc;
+                        outline: none;
+                        letter-spacing: 0px;
+                    ">Confirmar</div>
+                    <div onclick="popupCancelarCadastro()" style="
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        color: #121b21;
+                        font-size: 15px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        width: 90vw;
+                        height: 50px;
+                        line-height: 50px;
+                        outline: none;
+                        letter-spacing: 0px;
+                        border-radius: 8px;
+                        /*border: 1px solid rgba(255,255,255,.5);*/
+                        background-color: #d5dadc;
+                        margin-top: 20px;
+                    ">Cancelar</div>
+                </div>
+            </div>
+            <!-- END CADASTRO POP UP -->
+
+            <!-- START CADASTRO POP UP -->
+            <div id="cadastroPrestador" class="popup" style="
+                position: absolute;
+                left: 0vw;
+                width: 100vw;
+                height: 100vh;
+                background-color: rgba(41, 46, 49,.6);
+                display:none;
+            ">
+                <div style="top: 0vh;
+                    overflow: auto;
+                    -webkit-overflow-scrolling: touch;
+                    width: 100vw;
+                    height: calc(100% - 0vh);
+                    height: -o-calc(100% - 0vh); /* opera */
+                    height: -webkit-calc(100% - 0vh); /* google, safari */
+                    height: -moz-calc(100% - 0vh); /* firefox */
+                    padding-top: -5px;
+                ">
+                    <div style="
+                        color: #fff;
+                        text-align: center;
+                        font-size: 16px;
+                        font-family: 'Open Sans';
+                        margin-top: 25px;
+                    ">Cadastro</div>
+                    <input type="text" id="nomePrestador"  placeholder="Nome completo" style="
+                        background-color: rgba(0,0,0,0);
+                        font-size: 12px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        margin-top: 10px;
+                        padding: 4vw;
+                        width: 90vw;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        outline: none;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        border-bottom:1px solid rgba(255,255,255,.5);
+                    "/>
+                    <input type="email" id="emailPrestador"  placeholder="Email" style="
+                        background-color: rgba(0,0,0,0);
+                        font-size: 12px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        padding: 4vw;
+                        width: 90vw;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        outline: none;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        border-bottom:1px solid rgba(255,255,255,.5);
+                    "/>
+                    <input type="text" name="cpf" maxlength="14" id="cpfPrestador" OnKeyPress="formatarFormato('###.###.###-##', this)" placeholder="CPF/CNPJ" style="
+                        background-color: rgba(0,0,0,0);
+                        font-size: 12px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        padding: 4vw;
+                        width: 90vw;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        outline: none;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        border-bottom:1px solid rgba(255,255,255,.5);
+                    "/>
+                    <input type="password" id="senhaCadastroPrestador"  placeholder="Senha" style="
+                        background-color: rgba(0,0,0,0);
+                        font-size: 12px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        padding: 4vw;
+                        width: 90vw;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        outline: none;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        border-bottom:1px solid rgba(255,255,255,.5);
+                    "/>
+                    <input type="password" id="confirmarSenhaPrestador"  placeholder="Confirmar senha" style="
+                        background-color: rgba(0,0,0,0);
+                        font-size: 12px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        padding: 4vw;
+                        width: 90vw;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        outline: none;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        border-bottom:1px solid rgba(255,255,255,.5);
+                    "/>
+                    <select multiple id="servicosCadastro" style="
+                        background-color: rgba(0,0,0,0);
+                        font-size: 12px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        padding: 4vw;
+                        width: 90vw;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        outline: none;
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        border-bottom:1px solid rgba(255,255,255,.5);
+                    ">
+                    </select>
+                    <div onclick="validarDadosPrestador()" style="
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        color: #121b21;
+                        font-size: 15px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        margin-top: 20px;
+                        width: 90vw;
+                        height: 50px;
+                        line-height: 50px;
+                        border-radius: 8px;
+                        /*border: 1px solid rgba(255,255,255,.5);*/
+                        background-color: #d5dadc;
+                        outline: none;
+                        letter-spacing: 0px;
+                    ">Avançar</div>
+                    <div onclick="popup9()" style="
+                        box-sizing: border-box;
+                        -webkit-box-sizing:border-box;
+                        -moz-box-sizing: border-box;
+                        color: #121b21;
+                        font-size: 15px;
+                        font-family: 'Open Sans';
+                        margin: 0px;
+                        width: 90vw;
+                        height: 50px;
+                        line-height: 50px;
+                        outline: none;
+                        letter-spacing: 0px;
+                        border-radius: 8px;
+                        /*border: 1px solid rgba(255,255,255,.5);*/
+                        background-color: #d5dadc;
+                        margin-top: 20px;
+                    ">Cancelar</div>
+                </div>
+            </div>
+            <!-- END CADASTRO POP UP -->
+
+            <div id="cadastroLocalPrestador" class="popup" style="
+                position: absolute;
+                left: 0vw;
+                width: 100vw;
+                height: 100vh;
+                background-color: rgba(41, 46, 49,.6);
+                display:none;
+            ">
+                <div style="
+                    color: #fff;
+                    text-align: center;
+                    font-size: 16px;
+                    font-family: 'Open Sans';
+                    margin-top: 25px;
+                ">Cadastro locais de atendimento</div>
+                <div style="
+                    top: 10vh;
+                    overflow: auto;
+                    -webkit-overflow-scrolling: touch;
+                    width: 100vw;
+                    height: calc(100% - 35vh);
+                    height: -o-calc(100% - 35vh); /* opera */
+                    height: -webkit-calc(100% - 35vh); /* google, safari */
+                    height: -moz-calc(100% - 35vh); /* firefox */
+                    padding-top: -5px;
+                    margin-top: 10px;
+                ">
+                    
+                    <div id="adicionarEstado0"></div><br>
+                               
+                </div>
+                <div onclick="cadastrarLocal(window.localStorage.getItem('auxiliarEstados'))" style="
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    color: #121b21;
+                    font-size: 15px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    margin-top: 20px;
+                    width: 90vw;
+                    height: 50px;
+                    line-height: 50px;
+                    border-radius: 8px;
+                    /*border: 1px solid rgba(255,255,255,.5);*/
+                    background-color: #d5dadc;
+                    outline: none;
+                    letter-spacing: 0px;
+                    bottom: 0;
+                ">Cadastrar</div>
+                <div onclick="cancelarLocal()" style="
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    color: #121b21;
+                    font-size: 15px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    width: 90vw;
+                    height: 50px;
+                    line-height: 50px;
+                    outline: none;
+                    letter-spacing: 0px;
+                    border-radius: 8px;
+                    /*border: 1px solid rgba(255,255,255,.5);*/
+                    background-color: #d5dadc;
+                    margin-top: 20px;
+                    bottom:0;
+                ">Cancelar</div> 
+                
+                <!-- START POP UPS -->
+            </div>
+        </center>    
+    </body>
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script> 
+</html>

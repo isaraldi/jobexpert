@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Job Expert Control</title>
+
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<meta charset="utf-8" />		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+		<link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/boostrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="assets/plugins/nvd3/nv.d3.min.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="assets/plugins/mapplic/css/mapplic.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/rickshaw/rickshaw.min.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="assets/plugins/jquery-metrojs/MetroJs.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+		<link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="fixed-header dashboard">
+		<!-- BEGIN SIDEBPANEL-->
+		<nav class="page-sidebar" data-pages="sidebar">
+			<!-- BEGIN SIDEBAR MENU TOP TRAY CONTENT-->
+			<div class="sidebar-overlay-slide from-top" id="appMenu">
+				<div class="row">
+					<div class="col-xs-6 no-padding">
+						<a href="#" class="p-l-40"><img src="assets/img/demo/social_app.svg" alt="socail">
+						</a>
+					</div>
+					<div class="col-xs-6 no-padding">
+						<a href="#" class="p-l-10"><img src="assets/img/demo/email_app.svg" alt="socail">
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6 m-t-20 no-padding">
+						<a href="#" class="p-l-40"><img src="assets/img/demo/calendar_app.svg" alt="socail">
+						</a>
+					</div>
+					<div class="col-xs-6 m-t-20 no-padding">
+						<a href="#" class="p-l-10"><img src="assets/img/demo/add_more.svg" alt="socail">
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- END SIDEBAR MENU TOP TRAY CONTENT-->
+			<!-- BEGIN SIDEBAR MENU HEADER-->
+			<div class="sidebar-header">
+			</div>
+			<!-- END SIDEBAR MENU HEADER-->
+			<!-- START SIDEBAR MENU -->
+			<div class="sidebar-menu">
+				<!-- BEGIN SIDEBAR MENU ITEMS-->
+				<ul class="menu-items">
+					<li class="m-t-20">
+						<a href="index.html" class="detailed">
+							<span class="title">Início</span>
+							<!-- <span class="details">Resumo geral</span> -->
+						</a>
+						<span class="icon-thumbnail"><i class="pg-inbox"></i></span>
+					</li>
+					<li class="">
+						<a href="chamadas.html" class="detailed">
+							<span class="title">Chamadas</span>
+							<!-- <span class="details">Profissionais cadastrados</span> -->
+						</a>
+						<span class="icon-thumbnail"><i class="pg-clock"></i></span>
+					</li>
+					<li class="">
+						<a href="prestadores.html" class="detailed">
+							<span class="title">Prestadores</span>
+							<!-- <span class="details">Profissionais cadastrados</span> -->
+						</a>
+						<span class="icon-thumbnail"><i class="pg-suitcase"></i></span>
+					</li>
+					<li class="">
+						<a href="usuarios.html" class="detailed">
+						<span class="title">Usuários</span>
+						<span class="details"></span>
+						</a>
+						<span class="icon-thumbnail"><i class="pg-layouts3"></i></span>
+					</li>
+					<li class="">
+						<a href="servicos.html"><span class="title">Serviços</span></a>
+						<span class="icon-thumbnail"><i class="pg-ordered_list"></i></span>
+					</li>
+					<li class="">
+						<a href="#"><span class="title">Sair</span></a>
+						<span class="icon-thumbnail"><i class="pg-close_line"></i></span>
+					</li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+			<!-- END SIDEBAR MENU -->
+		</nav>
+		<!-- END SIDEBAR -->
+		<!-- END SIDEBPANEL-->
+		<!-- START PAGE-CONTAINER -->
+		<div class="page-container ">
+			<!-- START HEADER -->
+			<div class="header ">
+				<!-- START MOBILE CONTROLS -->
+				<div class="container-fluid relative">
+					<!-- LEFT SIDE -->
+					<div class="pull-left full-height visible-sm visible-xs">
+						<!-- START ACTION BAR -->
+						<div class="header-inner">
+							<a href="#" class="btn-link toggle-sidebar visible-sm-inline-block visible-xs-inline-block padding-5" data-toggle="sidebar">
+							<span class="icon-set menu-hambuger"></span>
+							</a>
+						</div>
+						<!-- END ACTION BAR -->
+					</div>
+				</div>
+			</div>
+			<!-- END HEADER -->
+			<!-- START PAGE CONTENT WRAPPER -->
+			<div class="page-content-wrapper ">
+				<!-- START PAGE CONTENT -->
+				<div class="content sm-gutter">
+					<!-- START CONTAINER FLUID -->
+					<div class="container-fluid padding-20 sm-padding-10">
+						<!-- START ROW -->
+
+								
+								<!-- START BREADCRUMB -->
+								<ul class="breadcrumb">
+									<li>
+										<a href="index.html">Início</a>
+									</li>
+									<li><a href="servicos.html">Listagem de serviços</a>
+									</li>
+									<li><a class="active" id="nomeServico"></a>
+									</li>
+								</ul>
+						
+
+					 <!-- START PANEL -->
+								<div class="panel" >
+									<div class="panel-body">
+										<div class="table-responsive">
+											<table class="table table-hover table-condensed" id="condensedTable">
+									 <thead>
+													<tr>
+														
+														<th style="width:20%">Chamada</th>
+														<th style="width:25%">Usuário</th>
+														<th style="width:30%">Prestador</th>
+														<th style="width:25%">Horário</th>
+													</tr>
+												</thead>
+												<tbody id="servicosChamadas">
+
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<!-- END PANEL -->
+
+
+
+					</div>
+				</div>
+			</div>
+			<!-- END CONTAINER FLUID -->
+		</div>
+		<!-- END PAGE CONTENT -->
+		</div>
+		<!-- END PAGE CONTENT WRAPPER -->
+		</div>
+		<!-- END PAGE CONTAINER -->
+		
+		<!-- BEGIN VENDOR JS -->
+		<script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/modernizr.custom.js" type="text/javascript"></script>
+		<script src="assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/boostrapv3/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
+		<script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/jquery-bez/jquery.bez.min.js"></script>
+		<script src="assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/jquery-actual/jquery.actual.min.js"></script>
+		<script src="assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+		<script type="text/javascript" src="assets/plugins/bootstrap-select2/select2.min.js"></script>
+		<script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
+		<script src="assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/nvd3/lib/d3.v3.js" type="text/javascript"></script>
+		<script src="assets/plugins/nvd3/nv.d3.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/nvd3/src/utils.js" type="text/javascript"></script>
+		<script src="assets/plugins/nvd3/src/tooltip.js" type="text/javascript"></script>
+		<script src="assets/plugins/nvd3/src/interactiveLayer.js" type="text/javascript"></script>
+		<script src="assets/plugins/nvd3/src/models/axis.js" type="text/javascript"></script>
+		<script src="assets/plugins/nvd3/src/models/line.js" type="text/javascript"></script>
+		<script src="assets/plugins/nvd3/src/models/lineWithFocusChart.js" type="text/javascript"></script>
+		<script src="assets/plugins/mapplic/js/hammer.js"></script>
+		<script src="assets/plugins/mapplic/js/jquery.mousewheel.js"></script>
+		<script src="assets/plugins/mapplic/js/mapplic.js"></script>
+		<script src="assets/plugins/rickshaw/rickshaw.min.js"></script>
+		<script src="assets/plugins/jquery-metrojs/MetroJs.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+		<script src="assets/plugins/skycons/skycons.js" type="text/javascript"></script>
+		<script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
+		<!-- END VENDOR JS -->
+
+		<!-- BEGIN CORE TEMPLATE JS -->
+		<script src="pages/js/pages.min.js"></script>
+		<!-- END CORE TEMPLATE JS -->
+
+		<!-- BEGIN PAGE LEVEL JS -->
+		<script src="assets/js/dashboard.js" type="text/javascript"></script>
+		<script src="assets/js/scripts.js" type="text/javascript"></script>
+		<!-- END PAGE LEVEL JS -->
+
+		<!-- BEGIN BACKEND JS -->
+		<script type="text/javascript" src="js/header.js"></script>
+		<script type="text/javascript" src="js/servicos.js"></script>
+		<!-- END BACKEND JS -->
+
+		<script type="text/javascript">
+			function $_GET(param) {
+				var vars = {};
+				window.location.href.replace( location.hash, '' ).replace( 
+					/[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+					function( m, key, value ) { // callback
+						vars[key] = value !== undefined ? value : '';
+					}
+				);
+				if ( param ) {
+					return vars[param] ? vars[param] : null;
+				}
+				return vars;
+			}
+			var id_servico = $_GET('id_servico');
+			servicosChamadas(id_servico);
+		</script>
+	</body>
+</html>

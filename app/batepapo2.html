@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Expert</title>
+        <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <style>
+            @font-face {
+                font-family: 'Gordita-LightItalic';
+                src: url('fonts/Gordita-LightItalic.eot');
+                src: url('fonts/Gordita-LightItalic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-LightItalic.woff') format('woff'),
+                    url('fonts/Gordita-LightItalic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-MediumItalic';
+                src: url('fonts/Gordita-MediumItalic.eot');
+                src: url('fonts/Gordita-MediumItalic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-MediumItalic.woff') format('woff'),
+                    url('fonts/Gordita-MediumItalic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-BlackItalic';
+                src: url('fonts/Gordita-BlackItalic.eot');
+                src: url('fonts/Gordita-BlackItalic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-BlackItalic.woff') format('woff'),
+                    url('fonts/Gordita-BlackItalic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Bold';
+                src: url('fonts/Gordita-Bold.eot');
+                src: url('fonts/Gordita-Bold.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Bold.woff') format('woff'),
+                    url('fonts/Gordita-Bold.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Black';
+                src: url('fonts/Gordita-Black.eot');
+                src: url('fonts/Gordita-Black.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Black.woff') format('woff'),
+                    url('fonts/Gordita-Black.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-BoldItalic';
+                src: url('fonts/Gordita-BoldItalic.eot');
+                src: url('fonts/Gordita-BoldItalic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-BoldItalic.woff') format('woff'),
+                    url('fonts/Gordita-BoldItalic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Regular';
+                src: url('fonts/Gordita-Regular.eot');
+                src: url('fonts/Gordita-Regular.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Regular.woff') format('woff'),
+                    url('fonts/Gordita-Regular.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Light';
+                src: url('fonts/Gordita-Light.eot');
+                src: url('fonts/Gordita-Light.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Light.woff') format('woff'),
+                    url('fonts/Gordita-Light.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Medium';
+                src: url('fonts/Gordita-Medium.eot');
+                src: url('fonts/Gordita-Medium.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Medium.woff') format('woff'),
+                    url('fonts/Gordita-Medium.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Gordita-Italic';
+                src: url('fonts/Gordita-Italic.eot');
+                src: url('fonts/Gordita-Italic.eot?#iefix') format('embedded-opentype'),
+                    url('fonts/Gordita-Italic.woff') format('woff'),
+                    url('fonts/Gordita-Italic.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+              font-family: 'Damion-Regular';
+              src: url('fonts/Damion-Regular.eot');
+              src: url('fonts/Damion-Regular.woff2') format('woff2'),
+                   url('fonts/Damion-Regular.eot?#iefix') format('embedded-opentype');
+              font-weight: normal;
+              font-style: normal;
+            }
+
+            @font-face {
+              font-family: 'Damion';
+              src: url('fonts/Damion.woff') format('woff'),
+                   url('fonts/Damion.ttf') format('truetype'),
+                   url('fonts/Damion.svg#Damion') format('svg');
+              font-weight: normal;
+              font-style: normal;
+            }
+
+            @font-face {
+              font-family: 'BrandonGrotesque-Bold';
+              src: url('./fonts/BrandonGrotesque-Bold.eot');
+              src: url('./fonts/BrandonGrotesque-Bold.woff2') format('woff2'),
+                   url('./fonts/BrandonGrotesque-Bold.woff') format('woff'),
+                   url('./fonts/BrandonGrotesque-Bold.ttf') format('truetype'),
+                   url('./fonts/BrandonGrotesque-Bold.svg#BrandonGrotesque-Bold') format('svg'),
+                   url('./fonts/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype');
+              font-weight: normal;
+              font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Open Sans';
+                src: url('./fonts/open/OpenSans.eot');
+                src: url('./fonts/open/OpenSans.eot?#iefix') format('embedded-opentype'),
+                    url('./fonts/open/OpenSans.woff') format('woff'),
+                    url('./fonts/open/OpenSans.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+
+            ::-webkit-input-placeholder {
+               color: rgba(255,255,255,.5);
+            }
+
+            :-moz-placeholder { /* Firefox 18- */
+               color: rgba(255,255,255,.5); 
+            }
+
+            ::-moz-placeholder {  /* Firefox 19+ */
+               color: rgba(255,255,255,.5);  
+            }
+
+            :-ms-input-placeholder {  
+               color: rgba(255,255,255,.5); 
+            }
+            * {
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                -webkit-tap-highlight-color: transparent;
+                margin: 0px;
+                padding: 0px;
+            }
+        </style>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/header.js"></script>
+        <link rel="stylesheet" href="./css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/font-awesome.css">
+    </head>
+
+    <body style="
+        margin: 0px;
+        padding: 0px;
+        background-image: url('img/bg.png');
+        background-size: cover;
+        background-repeat: no-repeat; 
+        /*background-color: #091219;*/
+        font-family: 'Open Sans';
+        color: white;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none;   /* Chrome/Safari/Opera */
+        -moz-user-select: none;      /* Firefox */
+        -ms-user-select: none;       /* Internet Explorer/Edge */
+        user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+
+    ">
+        <center>
+
+            <!-- HEADER -->
+            <div style="
+                width: 100vw;
+                position: fixed;
+                top: 0;
+                height: 60px;
+                /*border-bottom: 1px solid #fff;*/
+                background-color: rgba(40, 63, 101,0);
+                border-bottom: 1px solid rgba(255,255,255,.5);
+            ">
+
+                <!-- LOGO BAR -->
+                <div style="
+                    height: 60px;
+                    width: 100vw;
+                    display: inline-block;
+                ">
+
+                    <!-- LEFT BUTTON -->
+                    <a href="javascript: history.go(-1);">
+                        <div style="
+                            width: 30vw;
+                            height: 35px;
+                            float: left;
+                            position: absolute;
+                            top: 10px;
+                            left: 10px;
+                            color:#fff;
+                            font-size: 14px;
+                            line-height: 45px;
+                            font-family: 'Open Sans';
+                            text-align: left;
+                        ">Voltar
+                        </div>
+                    </a>
+                    <!-- END LEFT BUTTON -->
+
+                    <!-- LOGO -->
+                    <div style="
+                        width: 40vw;
+                        color:#fff;
+                        font-size: 16px;
+                        line-height: 45px;
+                        font-family: 'Open Sans';
+                        margin-top: 10px;
+                        text-align: center;
+                    ">Nome prestador
+                    </div>
+                    <!-- END LOGO -->
+
+                    <!-- RIGHT BUTTON -->
+                    <a href="#">
+                        <div style="
+                            width: 30vw;
+                            height: 35px;
+                            float: right;
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                            color:#fff;
+                            font-size: 14px;
+                            line-height: 45px;
+                            font-family: 'Open Sans';
+                           text-align: right;
+                        ">Opções
+                        </div>
+                    </a>
+                    <!-- END RIGHT BUTTON -->               
+
+                </div>
+                <!-- END LOGO BAR -->
+
+            </div>
+            <!-- END HEADER -->
+
+            <div style="
+                    position: absolute;
+                    top: 60px;
+                    overflow: auto;
+                    -webkit-overflow-scrolling: touch;
+                    width: 100vw;
+                    height: calc(100% - 110px);
+                    height: -o-calc(100% - 110px); /* opera */
+                    height: -webkit-calc(100% - 110px); /* google, safari */
+                    height: -moz-calc(100% - 110px); /* firefox */
+                    padding-top: -5px;
+                ">
+                    <div style="width: 100vw;min-height: 50px;">
+                        <div style="
+                            max-width: 60vw;
+                            min-width: 20vw;
+                            border: 1px solid rgba(255,255,255,.4);
+                            border-radius: 8px;
+                            padding: 10px;
+                            float: left;
+                            margin-left: 20px;
+                            margin-bottom: 5px;
+                            text-align: left;
+                        ">oi
+                        </div>
+                    </div>
+                    <div style="width: 100vw;min-height: 50px;">
+                        <div style="
+                            max-width: 60vw;
+                            min-width: 20vw;
+                            border: 1px solid rgba(0,0,0,.4);
+                            border-radius: 8px;
+                            padding: 10px;
+                            float: right;
+                            margin-bottom: 5px;
+                            margin-right: 20px;
+                            text-align: left;
+                        ">oi
+                        </div>
+                    </div>
+                    <div style="width: 100vw;min-height: 50px;">
+                        <div style="
+                            max-width: 60vw;
+                            min-width: 20vw;
+                            border: 1px solid rgba(0,0,0,.4);
+                            border-radius: 8px;
+                            padding: 10px;
+                            float: right;
+                            margin-bottom: 5px;
+                            margin-right: 20px;
+                            text-align: left;
+                        ">Ele não consegue mais produzir ar gelado a algum tempo. Mas fora isso não sei mais o que te explicar.
+                        </div>
+                    </div>
+                    <div style="width: 100vw;min-height: 50px;">
+                        <div style="
+                            max-width: 60vw;
+                            min-width: 20vw;
+                            border: 1px solid rgba(255,255,255,.4);
+                            border-radius: 8px;
+                            padding: 10px;
+                            float: left;
+                            margin-left: 20px;
+                            margin-bottom: 5px;
+                            text-align: left;
+                        ">Ele não consegue mais produzir ar gelado a algum tempo. Mas fora isso não sei mais o que te explicar.
+                        </div>
+                    </div>
+
+                    <div style="
+                        max-width: 60vw;
+                        min-width: 20vw;
+                        border: 1px solid rgba(255,255,255,.4);
+                        border-radius: 8px;
+                        padding: 10px;
+                        float: left;
+                        margin-left: 20px;
+                        margin-bottom: 5px;
+                        text-align: left;
+                    ">Tudo...
+                    </div>
+                    <div style="
+                        max-width: 60vw;
+                        min-width: 20vw;
+                        border: 1px solid rgba(255,255,255,.4);
+                        border-radius: 8px;
+                        padding: 10px;
+                        float: left;
+                        margin-left: 20px;
+                        margin-bottom: 15px;
+                        text-align: left;
+                    ">Poderia me explicar melhor qual é o problema no seu ar condicionado?
+                    </div>
+                    <div style="
+                        max-width: 60vw;
+                        min-width: 20vw;
+                        border: 1px solid rgba(0,0,0,.4);
+                        border-radius: 8px;
+                        padding: 10px;
+                        float: right;
+                        margin-bottom: 5px;
+                        margin-right: 20px;
+                        text-align: left;
+                    ">Ele não consegue mais produzir ar gelado a algum tempo. Mas fora isso não sei mais o que te explicar.
+                    </div>
+                    <div style="
+                        max-width: 60vw;
+                        min-width: 20vw;
+                        border: 1px solid rgba(0,0,0,.4);
+                        border-radius: 8px;
+                        padding: 10px;
+                        float: right;
+                        margin-bottom: 15px;
+                        margin-right: 20px;
+                        text-align: left;
+                    ">Consegue me dar um orçamento a partir disso?
+                    </div>
+                    <div style="
+                        max-width: 60vw;
+                        min-width: 20vw;
+                        border: 1px solid rgba(255,255,255,.4);
+                        border-radius: 8px;
+                        padding: 10px;
+                        float: left;
+                        margin-left: 20px;
+                        margin-bottom: 5px;
+                        text-align: left;
+                    ">Deve ser algum problema simples de resolver, acho que ficará mais ou menos 80 reais.
+                    </div>
+                    <div style="
+                        max-width: 60vw;
+                        min-width: 20vw;
+                        border: 1px solid rgba(255,255,255,.4);
+                        border-radius: 8px;
+                        padding: 10px;
+                        float: left;
+                        margin-left: 20px;
+                        margin-bottom: 5px;
+                        text-align: left;
+                    ">Oi
+                    </div>
+                </div>
+
+            <!-- START BUTTONS -->
+            <input placeholder="Escreva sua mensagem" style="
+                margin: 0px;
+                bottom: 0vw;
+                left: 0vw;
+                width: 80vw;
+                height: 50px;
+                line-height: 50px;
+                border: 0px;
+                outline: none;
+                position: absolute;
+                box-sizing: border-box;
+                -webkit-box-sizing:border-box;
+                -moz-box-sizing: border-box;
+                background-color: rgba(255,255,255,.2);
+                color: #fff;
+                font-size: 14px;
+                font-family: 'Open Sans';
+                margin: 0px;
+                width: 80vw;
+                height: 50px;
+                line-height: 50px;
+                outline: none;
+                letter-spacing: 1px;
+                /*border-top: 1px solid #b6b6e2;*/
+                padding-left: 15px;
+            ">
+            </input>
+            <div style="
+                margin: 0px;
+                bottom: 0vw;
+                left: 80vw;
+                width: 20vw;
+                height: 50px;
+                line-height: 50px;
+                border: 0px;
+                outline: none;
+                position: absolute;
+            ">
+                <div style="
+                    box-sizing: border-box;
+                    -webkit-box-sizing:border-box;
+                    -moz-box-sizing: border-box;
+                    background-color: #d5dadc;
+                    color: #121b21;
+                    font-size: 14px;
+                    font-family: 'Open Sans';
+                    margin: 0px;
+                    width: 20vw;
+                    height: 50px;
+                    line-height: 50px;
+                    outline: none;
+                    letter-spacing: 1px;
+                    /*border-top:1px solid #b6b6e2;
+                    border-left: 1px solid #b6b6e2;*/
+                ">Enviar
+                </div>
+            </div>
+
+                                  
+
+        </center>
+        <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script> 
+
+    </body>
+</html>
